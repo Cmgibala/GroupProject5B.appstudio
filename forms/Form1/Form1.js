@@ -27,3 +27,203 @@ Hand In: Submit one zipped team project.
 
 
 */
+/* confirm('Click \'OK\' to start game');
+alert('Welcome to the game. \n Directions: \n You will be given a six room house and must move through the house space-by-space on a defined path to find the exit. You will be given riddles that will help you find the correct path. The inputs for the game are as follows: \n up (u), down (d), left (l), and right (r). \n Any other input will return an error.');
+*/
+ 
+var entry = [
+               [1, 2, 3],
+               [4, 5, 6],
+               [7, 8, 9]
+];
+ 
+
+// Entry-Way Room Layout
+alert(`You will begin in the Entry-Way in space 1. The room layout is diagramed below: \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}.`);
+ 
+//move1
+var move1 = prompt(`Enter a direction (u, d, l, or r). \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}. \n Hint: The correct path for this room is also the postal code in Wyoming County, New York (look it up on a different device).`);
+ 
+if (move1 == 'd') {
+  //success condition
+  alert(`You have chosen the correct path. You are now on space 4 and closer to the door. \n The room layout is diagramed below: \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}.`);
+//Wrong path
+ 
+//Wall 
+} else if (move1 == 'l' || move1 == 'u' || move1 == 'r') {
+  alert("You've hit a wall or are on the wrong path! Try again.");
+ 
+  var move1b = prompt(`Enter a direction (u, d, l, or r). \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1]   [1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}. \n Hint: The correct path for this room is also the postal code in Wyoming County, New York (look it up on a different device).`);
+ 
+    if (move1b == 'd') {
+    //success condition
+    alert(`You have chosen the correct path. You are now on space 4 and closer to the door. \n The room layout is diagramed below: \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}.`);
+    }
+    else {
+      alert("Error. You lost.");
+    }
+ 
+} else {
+  alert("Error. You lost! :(");
+}
+ 
+ 
+ 
+ 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+ 
+//Move 2
+var move2 = prompt(`Move 2. You are on space 4. Enter a direction (u, d, l, or r). \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}. \n Hint: The correct path for this room is also the postal code in Wyoming County, New York (look it up on a different device).`);
+ 
+if (move2 == 'r') {
+  //success condition
+  alert(`You have chosen the correct path. You are now on space 5 and closer to the door. \n The room layout is diagramed below: \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}.`);
+//Wrong path
+ 
+//Wall 
+} else if (move2 == 'l' || move2 == 'u' || move2 == 'd') {
+  alert("You've hit a wall or are on the wrong path! Try again.");
+ 
+  var move2b = prompt(`Enter a direction (u, d, l, or r). \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1]   [1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}. \n Hint: The correct path for this room is also the postal code in Wyoming County, New York (look it up on a different device).`);
+ 
+    if (move2b == 'r') {
+    //success condition
+    alert(`You have chosen the correct path. You are now on space 5 and closer to the door. \n The room layout is diagramed below: \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}.`);
+    }
+    else {
+      alert("Error. You lost.");
+    }
+ 
+} else {
+  alert("Error. You lost! :(");
+}
+ 
+ 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+ 
+//Move 3
+var move3 = prompt(`Move 3. You are on space 5. Enter a direction (u, d, l, or r). \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}. \n Hint: The correct path for this room is also the postal code in Wyoming County, New York (look it up on a different device).`);
+ 
+if (move3 == 'r') {
+  //success condition
+  alert(`You have chosen the correct path. You are now on space 6 and closer to the door. \n The room layout is diagramed below: \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}.`);
+//Wrong path
+ 
+//Wall 
+} else if (move3 == 'l' || move3 == 'u' || move3 == 'd') {
+  alert("You've hit a wall or are on the wrong path! Try again.");
+ 
+  var move3b = prompt(`Enter a direction (u, d, l, or r). \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1]   [1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}. \n Hint: The correct path for this room is also the postal code in Wyoming County, New York (look it up on a different device).`);
+ 
+    if (move3b == 'r') {
+    //success condition
+    alert(`You have chosen the correct path. You are now on space 6 and closer to the door. \n The room layout is diagramed below: \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}.`);
+    }
+    else {
+      alert("Error. You lost.");
+    }
+ 
+} else {
+  alert("Error. You lost! :(");
+}
+ 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+ 
+ 
+//Move 4
+var move4 = prompt(`Move 4. You are on space 6. Enter a direction (u, d, l, or r). \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1][1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}. \n Hint: The correct path for this room is also the postal code in Wyoming County, New York (look it up on a different device).`);
+ 
+if (move4 == 'd') {
+  //success condition
+  alert(`You have chosen the correct path. You are now on space 9 and have reached the door. You will now move on to the living room.`);
+//Wrong path
+ 
+//Wall 
+} else if (move4 == 'l' || move4 == 'u' || move4 == 'r') {
+  alert("You've hit a wall or are on the wrong path! Try again.");
+ 
+  var move4b = prompt(`Enter a direction (u, d, l, or r). \n ${entry[0][0]} , ${entry[0][1]} , ${entry[0][2]} \n ${entry[1][0]} , ${entry[1]   [1]} , ${entry[1][2]} \n ${entry[2][0]} , ${entry[2][1]} , ${entry[2][2]}. \n Hint: The correct path for this room is also the postal code in Wyoming County, New York (look it up on a different device).`);
+ 
+    if (move4b == 'd') {
+    //success condition
+    alert(`You have chosen the correct path. You are now on space 9 and have reached the door. You will now move on to the living room.`);
+    }
+    else {
+      alert("Error. You lost.");
+    }
+ 
+} else {
+  alert("Error. You lost! :(");
+}
+ 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+var living = [
+               [1, 2, 3],
+               [4, 5, 6],
+               [7, 8, 9]
+];
+ 
+//Living Room Layout
+alert(`You are now in the living room in space 3. The room layout is diagramed below: \n ${living[0][0]} , ${living[0][1]} , ${living[0][2]} \n ${living[1][0]} , ${living[1][1]} , ${living[1][2]} \n ${living[2][0]} , ${living[2][1]} , ${living[2][2]}.`);
+ 
+//move1
+var move1 = prompt(`Enter a direction (u, d, l, or r). \n ${living[0][0]} , ${living[0][1]} , ${living[0][2]} \n ${living[1][0]} , ${living[1][1]} , ${living[1][2]} \n ${living[2][0]} , ${living[2][1]} , ${living[2][2]} \n Hint: The door to the next room is located at the space representing the number of innings in a standard baseball game. Take the shortest path.`);
+ 
+ 
+if (move1 == 'd') {
+  //success condition
+  alert(`You have chosen the correct path. You are now on space 6 and closer to the door. \n The room layout is diagramed below: \n ${living[0][0]} , ${living[0][1]} , ${living[0][2]} \n ${living[1][0]} , ${living[1][1]} , ${living[1][2]} \n ${living[2][0]} , ${living[2][1]} , ${living[2][2]}.`);
+//Wrong path
+ 
+//Wall 
+} else if (move1 == 'l' || move1 == 'u' || move1 == 'r') {
+  alert("You've hit a wall or are on the wrong path! Try again.");
+ 
+  var move1b = prompt(`Enter a direction (u, d, l, or r). \n ${living[0][0]} , ${living[0][1]} , ${living[0][2]} \n ${living[1][0]} , ${living[1][1]} , ${living[1][2]} \n ${living[2][0]} , ${living[2][1]} , ${living[2][2]}. \n Hint: The door to the next room is located at the space representing the number of innings in a standard baseball game. Take the shortest path.`);
+ 
+    if (move1b == 'd') {
+    //success condition
+    alert(`You have chosen the correct path. You are now on space 6 and closer to the door. \n The room layout is diagramed below: \n ${living[0][0]} , ${living[0][1]} , ${living[0][2]} \n ${living[1][0]} , ${living[1][1]} , ${living[1][2]} \n ${living[2][0]} , ${living[2][1]} , ${living[2][2]}.`);
+    }
+    else {
+      alert("Error. You lost.");
+    }
+ 
+} else {
+  alert("Error. You lost! :(");
+}
+ 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Move 2
+var move2 = prompt(`You are on space 6. Enter a direction (u, d, l, or r). \n ${living[0][0]} , ${living[0][1]} , ${living[0][2]} \n ${living[1][0]} , ${living[1][1]} , ${living[1][2]} \n ${living[2][0]} , ${living[2][1]} , ${living[2][2]} \n Hint: The door to the next room is located at the space representing the number of innings in a standard baseball game. Take the shortest path.`);
+ 
+ 
+if (move2 == 'd') {
+  //success condition
+  alert(`You have chosen the correct path. You are now on space 9 and have found the door. You will now move to the dining room and will start on space 2.`);
+//Wrong path
+ 
+//Wall 
+} else if (move2 == 'l' || move2 == 'u' || move2 == 'r') {
+  alert("You've hit a wall or are on the wrong path! Try again.");
+ 
+  var move2b = prompt(`You are on space 6. Enter a direction (u, d, l, or r). \n ${living[0][0]} , ${living[0][1]} , ${living[0][2]} \n ${living[1][0]} , ${living[1][1]} , ${living[1][2]} \n ${living[2][0]} , ${living[2][1]} , ${living[2][2]}. \n Hint: The door to the next room is located at the space representing the number of innings in a standard baseball game. Take the shortest path.`);
+ 
+    if (move2b == 'd') {
+    //success condition
+    alert(`You have chosen the correct path. You are now on space 9 and have found the door. You will now move to the dining room and will start on space 2.`);
+    }  else {
+      alert("Error. You lost.");
+    }
+ 
+} else {
+  alert("Error. You lost! :(");
+}
