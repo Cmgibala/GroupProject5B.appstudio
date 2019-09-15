@@ -24,12 +24,12 @@ Do not use any loops or functions (we haven't learned these yet). Just use code 
 On the Word doc, detail exactly what each user did for the portfolio (working individually, in pairs, etc is fin -just document). I will use this along with my observations and questions for you in class to adjust individual grades on this portfolio up or down.
 Hand In: Submit one zipped team project.
 
-
-
 */
-/* confirm('Click \'OK\' to start game');
+
+/*
+confirm('Click \'OK\' to start game');
 alert('Welcome to the game. \n Directions: \n You will be given a six room house and must move through the house space-by-space on a defined path to find the exit. You will be given riddles that will help you find the correct path. The inputs for the game are as follows: \n up (u), down (d), left (l), and right (r). \n Any other input will return an error.');
-*/
+
  
 var entry = [
                [1, 2, 3],
@@ -227,3 +227,101 @@ if (move2 == 'd') {
 } else {
   alert("Error. You lost! :(");
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var dining = [
+               [1 , 2],
+               [3 , 4]
+];
+
+
+//Definition of dining room
+alert(`You are now in the dining room, in space 2. \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]}`);
+
+//move1
+var move1 = prompt(`Enter a direction (u, d, l, or r). \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]} \n Hint: The correct path can be found my multiplying 11 * 194`);
+ 
+if (move1 == 'l') {
+  //success condition
+  alert(`You have chosen the correct path. You are now on space 1 and closer to the door. \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]}.`);
+//Wrong path
+ 
+//Wall 
+} else if (move1 == 'd' || move1 == 'u' || move1 == 'r') {
+  alert("You've hit a wall or are on the wrong path! Try again.");
+ 
+  var move1b = prompt(`Enter a direction (u, d, l, or r). \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]} \n Hint: The correct path can be found my multiplying 11 * 194`);
+ 
+    if (move1b == 'l') {
+    //success condition
+    alert(`You have chosen the correct path. You are now on space 1 and closer to the door. \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]}.`);
+    }
+    else {
+      alert("Error. You lost.");
+    }
+ 
+} else {
+  alert("Error. You lost! :(");
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//move2
+var move2 = prompt(`You are now on space 1. Enter a direction (u, d, l, or r). \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]} \n Hint: The correct path can be found my multiplying 11 * 194`);
+ 
+if (move2 == 'd') {
+  //success condition
+  alert(`You have chosen the correct path. You are now on space 3 and closer to the door. \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]}.`);
+//Wrong path
+ 
+//Wall 
+} else if (move2 == 'l' || move2 == 'u' || move2 == 'r') {
+  alert("You've hit a wall or are on the wrong path! Try again.");
+ 
+  var move2b = prompt(`Enter a direction (u, d, l, or r). \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]} \n Hint: The correct path can be found my multiplying 11 * 194`);
+ 
+    if (move2b == 'd') {
+    //success condition
+    alert(`You have chosen the correct path. You are now on space 3 and closer to the door. \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]}.`);
+    }
+    else {
+      alert("Error. You lost.");
+    }
+ 
+} else {
+  alert("Error. You lost! :(");
+}
+
+/////////////////////////////////////////////////////////////////////////////
+//move3
+var move3 = prompt(`You are now on space 3. Enter a direction (u, d, l, or r). \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]} \n Hint: The correct path can be found my multiplying 11 * 194`);
+ 
+if (move3 == 'r') {
+  //success condition
+  alert(`You have chosen the correct path. You are now on space 4 and have found the door. You will now move on to the kitchen.`);
+//Wrong path
+ 
+//Wall 
+} else if (move3 == 'l' || move3 == 'u' || move3 == 'd') {
+  alert("You've hit a wall or are on the wrong path! Try again.");
+ 
+  var move3b = prompt(`Enter a direction (u, d, l, or r). \n The room layout is diagramed below: \n${dining[0][0]} , ${dining[0][1]} \n${dining[1][0]} , ${dining[1][1]} \n Hint: The correct path can be found my multiplying 11 * 194`);
+ 
+    if (move3b == 'r') {
+    //success condition
+      alert(`You have chosen the correct path. You are now on space 4 and have found the door. You will now move on to the kitchen.`);
+    }
+    else {
+      alert("Error. You lost.");
+    }
+ 
+} else {
+  alert("Error. You lost! :(");
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
