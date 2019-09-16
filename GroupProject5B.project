@@ -21,6 +21,22 @@
             "Form1", 
             "Form1.json"
           ]
+        }, 
+        {
+          "!type": "External", 
+          "file": [
+            "forms", 
+            "First_Bedroom", 
+            "First_Bedroom.json"
+          ]
+        }, 
+        {
+          "!type": "External", 
+          "file": [
+            "forms", 
+            "Second_Bedroom", 
+            "Second_Bedroom.json"
+          ]
         }
       ], 
       "configxml": null, 
